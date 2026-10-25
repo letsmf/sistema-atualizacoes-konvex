@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Editar atualização</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="./index.html">Voltar ao feed</a>
+
+        <h1>Editar atualização</h1>
+
+    </header>
+
+    <main>
+
+        <form id="formEdicao" class="formulario-atualizacao">
+            <label for="titulo">Título:</label>
+
+            <input
+                type="text"
+                id="titulo"
+                maxlength="50"
+                required
+            >
+
+            <label for="conteudo">Conteúdo:</label>
+
+            <textarea
+                id="conteudo"
+                maxlength="1000"
+                required
+            ></textarea>
+
+            <p>Selecione as áreas:</p>
+
+        <div class="lista-areas">
+
+            <div class="opcao-area">
+                <input type="checkbox" id="giFin" name="area" value="Gestão Interna e Finanças">
+                <label for="giFin">Gestão Interna e Finanças</label>
+            </div>
+
+            <div class="opcao-area">
+                <input type="checkbox" id="pessoas" name="area" value="Pessoas">
+                <label for="pessoas">Pessoas</label>
+            </div>
+
+            <div class="opcao-area">
+                <input type="checkbox" id="projetos" name="area" value="Projetos">
+                <label for="projetos">Projetos</label>
+            </div>
+
+            <div class="opcao-area">
+                <input type="checkbox" id="marketing" name="area" value="Marketing">
+                <label for="marketing">Marketing</label>
+            </div>
+
+            <div class="opcao-area">
+                <input type="checkbox" id="mercado" name="area" value="Mercado">
+                <label for="mercado">Mercado</label>
+            </div>
+
+        </div>
+
+        <br>
+
+            <button type="button" id="botaoSalvar" class="botao-acao">
+                Salvar alterações
+            </button>
+
+        </form>
+
+    </main>
+
+    <script src="editar-atualizacao.js"></script>
+
+</body>
+
+</html>
